@@ -5,7 +5,7 @@
 #Let's Make Recycling Great Again!
 
 
-############################### declarations
+###############################
 import argparse
 import base64
 import picamera
@@ -27,7 +27,7 @@ import time
  
 GPIO.setmode(GPIO.BOARD)
 GPIO.setwarnings(False)
-############################### Declarations End
+###############################
 
 
 ############################### Motor Related
@@ -100,6 +100,7 @@ def setStep4(w1, w2, w3, w4):
     GPIO.output(d3 , w4)
  
 def forward(t,a):
+#adjusted values due to varying motor friction
     q = 50
     if t==1:
         q=50
@@ -122,6 +123,7 @@ def forward(t,a):
             time.sleep(1.0/1000.0)
 
 def back(t,a):
+#adjusted values due to varying motor friction
     q = 50
     if t==1:
         q=48
@@ -164,7 +166,7 @@ def takephoto():
 ############################### Camera End
 
 
-############################### FSR
+###############################
 def RCtime (RCpin):
         reading = 0
 
@@ -182,19 +184,19 @@ def RCtime (RCpin):
 
 
 def touch():
-    print "\n\nPlease push an object on the sensor so that this thing can finna be operational k thx"
+    print "\n\nPlease place an object on the sensor"
     test = 0
     
     while (test < 1):                                     
         print RCtime(40) 
         GPIO.output(38,GPIO.HIGH)
-        print "\n\n\n\nWoohoo the led turned on yee\n\n\n"
+        print "\n\n\n\nThe led turned on \n\n\n"
         
         test = 1
-############################### FSR End
+###############################
    
         
-############################### Program Main
+###############################
 def main():
     rejectcounter = 0  
     GPIO.setup(38, GPIO.OUT)
@@ -226,7 +228,10 @@ def main():
                 response = service_request.execute()
                 k = json.dumps(response, indent=4, sort_keys=True)
 
-            
+# t = 1 for Milk Cartons
+# t = 2 for Aluminum Can
+# t = 3 for Water Bottle
+# t = 4 for Rejected Items or Trash
             
                 
                 with open('jsonfile.txt', 'w') as f:
@@ -318,4 +323,4 @@ if __name__ == '__main__':
 
     main()
 
-############################### Program Main End
+###############################
