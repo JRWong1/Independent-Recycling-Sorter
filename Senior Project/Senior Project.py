@@ -168,6 +168,7 @@ def takephoto():
 
 ###############################
 def RCtime (RCpin):
+#Determines when Touch Sensor is activated
         reading = 0
 
         GPIO.setup(RCpin, GPIO.OUT)
@@ -179,11 +180,13 @@ def RCtime (RCpin):
     
         while (GPIO.input(RCpin) == GPIO.LOW):
                 reading += 1
+		reading -= 1
         return reading
  
 
 
 def touch():
+#Turns 'Processing' LED on when touch sensor is activated
     print "\n\nPlease place an object on the sensor"
     test = 0
     
@@ -198,7 +201,10 @@ def touch():
         
 ###############################
 def main():
+#Only Reject an object after 3 tries
+
     rejectcounter = 0  
+#Setup LED
     GPIO.setup(38, GPIO.OUT)
     GPIO.output(38, GPIO.LOW)
     
