@@ -1,0 +1,77 @@
+{
+    "responses": [
+        {
+            "webDetection": {
+                "bestGuessLabels": [
+                    {
+                        "label": "water"
+                    }
+                ], 
+                "visuallySimilarImages": [
+                    {
+                        "url": "https://mediaassets.news5cleveland.com/photo/2017/02/27/Screen%20Shot%202017-02-27%20at%204.56.21%20PM_1488232627330_55995586_ver1.0_640_480.png"
+                    }, 
+                    {
+                        "url": "https://c8.alamy.com/comp/DEBJC0/hall-ikerchem-research-lab-design-and-synthesis-of-new-chemical-entities-DEBJC0.jpg"
+                    }, 
+                    {
+                        "url": "https://c8.alamy.com/comp/DEBJC1/hall-ikerchem-research-lab-design-and-synthesis-of-new-chemical-entities-DEBJC1.jpg"
+                    }, 
+                    {
+                        "url": "https://nashvillearts.com/wp-content/uploads/2013/06/Churchwell_suit-RISD_Museum-ArtistRebelDandy-installation.jpg"
+                    }, 
+                    {
+                        "url": "http://www.mirrorworld.co.uk/sliders/img/twoway5.jpg"
+                    }, 
+                    {
+                        "url": "http://wordpress.philau.edu/today/wp-content/uploads/2018/01/Deanna1.jpg"
+                    }, 
+                    {
+                        "url": "https://c8.alamy.com/comp/X8M6A5/hall-ikerchem-research-lab-design-and-synthesis-of-new-chemical-entities-with-therapeutic-applications-in-oncology-X8M6A5.jpg"
+                    }, 
+                    {
+                        "url": "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/V__xp7pUe/young-happy-couple-romantic-date-drink-glass-of-red-wine-at-restaurant-celebrating-valentine-day_47woc0ontg__F0000.png"
+                    }, 
+                    {
+                        "url": "http://www.disd.edu/newsletter/0511/images/hines1-lg.jpg"
+                    }, 
+                    {
+                        "url": "https://thumb9.shutterstock.com/display_pic_with_logo/950635/687128362/stock-photo-hairdresser-using-hairspray-on-girl-s-hair-creating-natural-casual-hairstyle-in-hair-design-salon-687128362.jpg"
+                    }
+                ], 
+                "webEntities": [
+                    {
+                        "description": "Plastic bottle", 
+                        "entityId": "/m/02rlncx", 
+                        "score": 0.7477233
+                    }, 
+                    {
+                        "description": "Drink", 
+                        "entityId": "/m/0271t", 
+                        "score": 0.7438016
+                    }, 
+                    {
+                        "description": "Glass", 
+                        "entityId": "/m/039jq", 
+                        "score": 0.6750306
+                    }, 
+                    {
+                        "description": "Plastic", 
+                        "entityId": "/m/05z87", 
+                        "score": 0.6158
+                    }, 
+                    {
+                        "description": "Water", 
+                        "entityId": "/m/0838f", 
+                        "score": 0.59935576
+                    }, 
+                    {
+                        "description": "Bottle", 
+                        "entityId": "/m/04dr76w", 
+                        "score": 0.5539
+                    }
+                ]
+            }
+        }
+    ]
+}
