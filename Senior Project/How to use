@@ -1,0 +1,3 @@
+To run:
+export GOOGLE_APPLICATION_CREDENTIALS="ECET Senior Project-8fedbaaddc95.json"
+python SeniorProject.py
