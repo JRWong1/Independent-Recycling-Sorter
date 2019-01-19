@@ -188,14 +188,14 @@ def RCtime (RCpin):
 def touch():
 #Turns 'Processing' LED on when touch sensor is activated
     print "\n\nPlease place an object on the sensor"
-    test = 0
+
     
-    while (test < 1):                                     
-        print RCtime(40) 
-        GPIO.output(38,GPIO.HIGH)
-        print "\n\n\n\nThe led turned on \n\n\n"
+                                         
+    print RCtime(40) 
+    GPIO.output(38,GPIO.HIGH)
+    print "\n\n\n\nThe led turned on \n\n\n"
         
-        test = 1
+
 ###############################
    
         
